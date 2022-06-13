@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { ensureClientAuthenticated } from "./middlewares/ensureClientAuthenticated";
 import { ensureDeliverymanAuthenticated } from "./middlewares/ensureDeliverymanAuthenticated";
-import { AuthenticateClientController } from "./modules/account/authenticateClient/AuthenticateClientController";
-import { AuthenticateDeliverymanController } from "./modules/account/authenticateDeliveryman/AuthenticateDeliverymanController";
+import { AuthenticateClientController } from "./modules/account/useCases/authenticateClient/AuthenticateClientController";
+import { AuthenticateDeliverymanController } from "./modules/account/useCases/authenticateDeliveryman/AuthenticateDeliverymanController";
 import { CreateClientController } from "./modules/clients/useCases/createClient/CreateClientController";
 import { CreateDeliveryController } from "./modules/deliveries/useCases/createDelivery/CreateDeliveryController";
 import { FindUnfinishedDeliveriesController } from "./modules/deliveries/useCases/findUnfinishedDeliveries.ts/FindUnfinishedDeliveriesController";
